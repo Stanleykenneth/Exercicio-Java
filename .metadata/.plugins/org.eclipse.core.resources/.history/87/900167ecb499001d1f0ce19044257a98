@@ -1,0 +1,26 @@
+package ExercicioEstrutura;
+
+import javax.swing.JOptionPane;
+
+/* Leia um número real. Se o número for positivo imprima a raiz quadrada.
+ * Do contrário, imprima o número ao quadrado.*/
+
+public class Exercicio03 {
+	
+	public static void main(String[] args) {
+		
+		int numero;
+		
+		numero = Integer.parseInt(JOptionPane.showInternalInputDialog(null,"Digite um número:"));
+		         JOptionPane.showMessageDialog(null, numero);
+		         
+		  if (numero > 0) {
+			  
+			  JOptionPane.showMessageDialog(null, "A raiz quadrada do número é: " + Math.sqrt(numero));
+		  } else if (numero < 0 ){
+			  
+			  JOptionPane.showMessageDialog(null, "O valor do número ao quadrado é: "  + (numero * numero));
+		  }
+		  
+	}
+}

@@ -1,0 +1,8 @@
+package ExercicioEstrutura;
+
+public class Exercício01 {
+	public static void main(String[] args) {
+		
+		int num1;
+	}
+}
