@@ -17,7 +17,7 @@ public class Exercicio05 {
 			JOptionPane.showMessageDialog(null, " O número digitado é par!");
 		} else {
 
-			JOptionPane.showMessageDialog(null, " O número digitadoJOptionPane.showMessageDialog(null, \"O segundo número digitado é maior que o primeiro.\" é impar!");
+			JOptionPane.showMessageDialog(null, " O número digitado é impar!");
 		}
 
 	}
