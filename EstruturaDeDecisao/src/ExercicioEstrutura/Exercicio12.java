@@ -1,0 +1,22 @@
+package ExercicioEstrutura;
+
+import javax.swing.JOptionPane;
+
+/*Ler um número inteiro. Se o número lido for negativo, escreva a mensagem:"Número inválido".
+  Se o número for positivo, calcular o logaritmo desse número.*/
+public class Exercicio12 {
+
+	public static void main(String[] args) {
+
+		int numero;
+
+		numero = Integer.parseInt(JOptionPane.showInputDialog(null, "Digite um número:"));
+		JOptionPane.showInternalMessageDialog(null, "O número digita foi: " + numero);
+
+		if (numero > 0) {
+			JOptionPane.showInternalMessageDialog(null, "O logaritmo do número é: " + Math.log(numero));
+		} else {
+			JOptionPane.showInternalMessageDialog(null, "Número inválido!");
+		}
+	}
+}
