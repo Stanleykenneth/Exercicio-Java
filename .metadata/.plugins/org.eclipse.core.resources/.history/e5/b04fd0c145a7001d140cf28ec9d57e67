@@ -1,0 +1,43 @@
+package ExercicioEstrutura;
+
+import java.util.Scanner;
+
+/*Faça um programa que receba altura e o sexo de uma pessoa
+  e calcule e mostre seu peso ideal, utilizando as seguintes formulas(onde h corresponde à altura):
+  .HOMENS:(72.7 *h) - 58
+  .MULHERES:(62.1 *h) - 44.7*/ 
+
+
+public class Exercicio10 {
+
+	public static void main(String[] args) {
+		Scanner ler = new Scanner(System.in);
+		String sexo;
+		double h, peso;
+		
+		System.out.println("Digite o seu sexo:");
+		sexo = ler.nextLine();
+		
+		System.out.println("Digite sua altura:");		
+		h = ler.nextDouble();		
+		
+		
+		switch(sexo){
+		  
+		case "masc":
+			System.out.println("Masculino");
+			break;
+		
+		case "Fem":
+			System.out.println("Femino");
+			break;
+			
+	    default:
+	    	System.out.println("O sexo é: " + sexo);			
+		}		
+		
+		if(sexo == "masc") {
+						
+		}
+	}
+}
