@@ -1,0 +1,8 @@
+package ExercicioEstrutura;
+/*Faça um programa que a calcule */
+public class Exercicio17 {
+	
+	public static void main(String[] args) {
+		
+	}
+}
