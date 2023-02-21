@@ -1,0 +1,58 @@
+package ExercicioEstrutura;
+
+import javax.swing.JOptionPane;
+
+/*Faça um programna que mostre ao usuário um menu com 4 operações
+  matemáticas (as básicas, por exemplo). O usuário escolhe uma opção
+  e seu programa então pede dois valores númericos e realiza a operação,
+  mostrando o resultado e saindo.*/
+public class Exercicio18 {
+
+	public static void main(String[] args) {
+
+		int calculadora = 0;
+		int num1, num2;
+
+		num1 = Integer.parseInt(JOptionPane.showInputDialog(null, "Digite um valor:"));
+		JOptionPane.showMessageDialog(null, +num1);
+
+		num2 = Integer.parseInt(JOptionPane.showInputDialog(null, "Digite outro valor:"));
+		JOptionPane.showMessageDialog(null, +num2);
+
+		while (calculadora != 5) {
+
+			calculadora = Integer
+					.parseInt(JOptionPane.showInputDialog(null, "-------- CALCULADORA --------"
+			                                                  + "\n 1 - SOMA "
+							                                  + "\n 2 - SUBTRAIÇÃO "
+			                                                  + "\n 3 - MULTIPLICAÇÃO"
+							                                  + "\n 4 - DIVISÃO"
+			                                                  + "\n 5 - SAIR"));
+
+			switch (calculadora) {
+
+			case 1:
+				JOptionPane.showMessageDialog(null, "O resultado da opcção selecionada é: " + (num1 + num2));
+				break;
+
+			case 2:
+				JOptionPane.showMessageDialog(null, "O resultado da opcção selecionada é: " + (num1 - num2));
+				break;
+
+			case 3:
+				JOptionPane.showMessageDialog(null, "O resultado da opcção selecionada é: " + (num1 * num2));
+				break;
+
+			case 4:
+				JOptionPane.showMessageDialog(null, "O resultado da opcção selecionada é: " + (num1 / num2));
+				break;
+
+			default:
+				JOptionPane.showMessageDialog(null, "Opção inválida");
+			}
+
+		}
+
+	}
+
+}
