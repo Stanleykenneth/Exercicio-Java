@@ -1,0 +1,23 @@
+package ExercicioEstrutura;
+
+import javax.swing.JOptionPane;
+
+/* Faça um programa para verificar se um determinado número
+   inteiro é divisivel por 3 ou por 5, mas não simultaneamente pelos dois. */
+
+public class Exercicio19 {
+	public static void main(String[] args) {
+		
+		int numero;
+		
+		numero = Integer.parseInt(JOptionPane.showInputDialog(" Digit um número: "));
+		JOptionPane.showMessageDialog(null, "O número digitado foi: " + numero);
+		
+		if(numero % 3 == 0){
+			 
+			JOptionPane.showMessageDialog(null, (numero / 3 ));
+		} else if (numero % 5 == 0) {
+			JOptionPane.showMessageDialog(null, (numero / 5));
+		}
+	}
+}

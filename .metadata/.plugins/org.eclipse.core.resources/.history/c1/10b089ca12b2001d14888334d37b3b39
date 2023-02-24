@@ -1,0 +1,46 @@
+package ExercicioEstrutura;
+
+import javax.swing.JOptionPane;
+
+/*Dados três valores, A, B, C; verificar se eles podem ser valores
+  de lados de um triângulo e se forem, se um triângulo escaleno, 
+  equilátero ou isóscele, considerando os seguintes conceitos:
+  
+  . O comprimento de cada lado de um triângulo é menor 
+    do que a soma dos outros dois lados.
+  
+  . Chama-se equilátero o triângulo que têm lados iguais.
+  
+  . Denominam-se isóseles o triângulo que têm o comprimento de dois lados iguais.
+  
+  . Recebe o nome de escaleno o triângulo que têm três lados diferentes*/
+public class Exercicio20 {
+	
+	public static void main(String[] args) {
+		
+		int ladoA;
+		int ladoB;
+		int ladoC;
+		
+		ladoA = Integer.parseInt(JOptionPane.showInputDialog(null, "Digite o valor da base do triângulo:"));
+		JOptionPane.showMessageDialog(null, "A base do triângulo é:" + ladoA);
+		
+		ladoB = Integer.parseInt(JOptionPane.showInputDialog(null, "Digite o valor do lado do triângulo:"));
+		JOptionPane.showMessageDialog(null, "A base do triângulo é:" + ladoB);
+		
+		ladoC = Integer.parseInt(JOptionPane.showInputDialog(null, "Digite o valor de outro lado do triângulo:"));
+		JOptionPane.showMessageDialog(null, "A base do triângulo é:" + ladoC);
+		
+		if(ladoA < (ladoB + ladoC )){
+			JOptionPane.showMessageDialog(null, "É um triângulo!");
+		} else if( ladoA == ladoB & ladoC == ladoA ) {
+			JOptionPane.showMessageDialog(null, "É um triângulo Equilátero!");
+		} else if ((ladoA != ladoB)& (ladoB == ladoC)) {
+			JOptionPane.showInternalMessageDialog(null, "É um triângulo Isóseles!");
+		} else if((ladoA != ladoB) & (ladoB != ladoC) & (ladoA != ladoC)) {
+			JOptionPane.showMessageDialog(null, "É um triângulo Escaleno!");
+		} else {
+			JOptionPane.showMessageDialog(null, "Não é um triângulo!");
+		}			
+	}
+}
