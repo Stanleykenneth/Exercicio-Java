@@ -1,0 +1,44 @@
+package ExercicioEstrutura;
+
+import javax.swing.JOptionPane;
+
+/*Escreva um programa que, dada a idade de um nadador, 
+  classifique-o em uma das seguintes categorias:
+  Infantil A - 5 a 7
+  Infantil B - 8 a 10
+  Juvenil A - 11 a 13 
+  Juvenil B - 14 a 17
+  Sênior - Maoires de 18*/
+   
+
+public class Exercicio27 {
+
+	public static void main(String[] args) {
+		
+		String nome;
+		int idade;
+		
+		nome = JOptionPane.showInputDialog(null, "Digite seu nome: ");
+		       JOptionPane.showMessageDialog(null," Seja Bem-vindo " + nome);
+		
+		idade = Integer.parseInt(JOptionPane.showInputDialog(null, "Didigte sua idade:"));
+				JOptionPane.showMessageDialog(null, "Você possui " + idade + " anos de idade!");
+				
+			if(idade >= 5 & idade <= 7) {
+				
+				JOptionPane.showMessageDialog(null, "Você se enquandra na categoria INFANTIL A!");
+			} else if  (idade >= 8 & idade <= 10) {
+				
+				JOptionPane.showMessageDialog(null, "Você se enquandra na categoria INFANTIL B!");
+			} else if  (idade >= 11 & idade <= 13) {
+				
+				JOptionPane.showMessageDialog(null, "Você se enquandra na categoria JUVENIL A!");
+			} else if  (idade >= 14 & idade <= 17) {
+				
+				JOptionPane.showMessageDialog(null, "Você se enquandra na categoria JUVENIL B!");
+			} else {
+				JOptionPane.showMessageDialog(null, "Você possui idade maior de 18, portanto sua categoria é SÊNIOR. ");
+			}			
+	}
+
+}

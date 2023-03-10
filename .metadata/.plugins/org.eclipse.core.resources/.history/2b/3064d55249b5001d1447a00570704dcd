@@ -1,0 +1,24 @@
+package ExercicioEstrutura;
+/*Calcule as raízes da equação de 2° grau.
+  . Se raiz for < 0 imprime: Não Existe Raiz. 
+  . Se raiz for = 0 Existe uma Raiz real imprime: Raiz única.
+  . Se raiz for >= 0 impreime: AS duas Raizes.*/
+public class Exercicio25 {
+	
+	public static void main(String[] args) {
+		
+		int a, b, c, delta;
+		
+		System.out.println("digite o valor de a: ");
+		System.out.println(a);
+		
+		System.out.println("digite o valor de a: ");
+		System.out.println(b);
+		
+		System.out.println("digite o valor de a: ");
+		System.out.println(c);
+		
+		
+		
+	}
+}

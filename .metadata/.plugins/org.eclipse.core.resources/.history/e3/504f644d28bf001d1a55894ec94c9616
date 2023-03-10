@@ -1,0 +1,24 @@
+package ExercicioEstrutura;
+
+import javax.swing.JOptionPane;
+
+/*Leia a distância  em Km  e a quantidadede litros de gasolina
+  consumidos por um carro em percurso, calcule o consume em km/l
+  e escreva um mensagem de acordo com a tabela abaixo:
+  Consumo menor que 8, venda o carro! * 8 e 14 Econômico e maior que 12 Super ecônomico!
+  entre 8 e 14 Econômico e maior que 12 Super ecônomico!
+ */
+
+public class Exercicio26 {
+
+	public static void main(String[] args) {
+		
+		int litros;
+		int km;
+		
+		litros = Integer.parseInt(JOptionPane.showInputDialog(null, "Digite a quantidade de litros de seu carro!"));
+		JOptionPane.showMessageDialog(null, "A capacidades em litroe é: " + litros);
+		
+	}
+
+}
